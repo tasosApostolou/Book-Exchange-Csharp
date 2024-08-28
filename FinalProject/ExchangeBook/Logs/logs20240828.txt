@@ -1,0 +1,131 @@
+[28-08-2024 17:11:46943 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[28-08-2024 17:11:47015 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[28-08-2024 17:11:47017 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[28-08-2024 17:11:47111 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+[28-08-2024 17:11:47113 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[28-08-2024 17:11:47116 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[28-08-2024 17:11:47129 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+[28-08-2024 17:11:47153 +03:00 Microsoft.EntityFrameworkCore.Migrations ] Applying migration '"20240828141131_InitialCreate"'.
+[28-08-2024 17:11:47253 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Authors] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(60) NULL,
+    CONSTRAINT [PK_Authors] PRIMARY KEY ([Id])
+);"
+[28-08-2024 17:11:47257 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [USERS] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(50) NULL,
+    [Email] nvarchar(50) NULL,
+    [Password] nvarchar(512) NULL,
+    [UserRole] nvarchar(50) NOT NULL,
+    CONSTRAINT [PK_USERS] PRIMARY KEY ([Id])
+);"
+[28-08-2024 17:11:47262 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Books] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(50) NULL,
+    [AuthorId] int NULL,
+    CONSTRAINT [PK_Books] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BOOK_AUTHOR] FOREIGN KEY ([AuthorId]) REFERENCES [Authors] ([Id])
+);"
+[28-08-2024 17:11:47266 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Persons] (
+    [Id] int NOT NULL IDENTITY,
+    [Firstname] nvarchar(50) NULL,
+    [Lastname] nvarchar(50) NULL,
+    [PhoneNumber] nvarchar(15) NULL,
+    [UserId] int NULL,
+    CONSTRAINT [PK_Persons] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PERSON_USER] FOREIGN KEY ([UserId]) REFERENCES [USERS] ([Id])
+);"
+[28-08-2024 17:11:47269 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Stores] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NULL,
+    [Address] nvarchar(max) NULL,
+    [UserId] int NULL,
+    CONSTRAINT [PK_Stores] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_STORE_USERS] FOREIGN KEY ([UserId]) REFERENCES [USERS] ([Id])
+);"
+[28-08-2024 17:11:47272 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Person_Book] (
+    [BooksId] int NOT NULL,
+    [PersonsId] int NOT NULL,
+    CONSTRAINT [PK_Person_Book] PRIMARY KEY ([BooksId], [PersonsId]),
+    CONSTRAINT [FK_Person_Book_Books_BooksId] FOREIGN KEY ([BooksId]) REFERENCES [Books] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Person_Book_Persons_PersonsId] FOREIGN KEY ([PersonsId]) REFERENCES [Persons] ([Id]) ON DELETE CASCADE
+);"
+[28-08-2024 17:11:47277 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [StoreBooks] (
+    [StoreId] int NOT NULL,
+    [BookId] int NOT NULL,
+    [Price] float NULL,
+    CONSTRAINT [PK_StoreBooks] PRIMARY KEY ([StoreId], [BookId]),
+    CONSTRAINT [FK_StoreBooks_Books_BookId] FOREIGN KEY ([BookId]) REFERENCES [Books] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StoreBooks_Stores_StoreId] FOREIGN KEY ([StoreId]) REFERENCES [Stores] ([Id]) ON DELETE CASCADE
+);"
+[28-08-2024 17:11:47279 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Books_AuthorId] ON [Books] ([AuthorId]);"
+[28-08-2024 17:11:47280 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_TITLE] ON [Books] ([Title]);"
+[28-08-2024 17:11:47282 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Person_Book_PersonsId] ON [Person_Book] ([PersonsId]);"
+[28-08-2024 17:11:47284 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [IX_Persons_UserId] ON [Persons] ([UserId]) WHERE [UserId] IS NOT NULL;"
+[28-08-2024 17:11:47286 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_StoreBooks_BookId] ON [StoreBooks] ([BookId]);"
+[28-08-2024 17:11:47289 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [IX_Stores_UserId] ON [Stores] ([UserId]) WHERE [UserId] IS NOT NULL;"
+[28-08-2024 17:11:47291 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [UQ_EMAIL] ON [USERS] ([Email]) WHERE [Email] IS NOT NULL;"
+[28-08-2024 17:11:47297 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [UQ_USERNAME] ON [USERS] ([Username]) WHERE [Username] IS NOT NULL;"
+[28-08-2024 17:11:47694 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240828141131_InitialCreate', N'8.0.6');"
+[28-08-2024 17:19:07075 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[28-08-2024 17:19:07135 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[28-08-2024 17:19:07137 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[28-08-2024 17:19:07138 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[28-08-2024 17:19:07153 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+[28-08-2024 17:19:07167 +03:00 Microsoft.EntityFrameworkCore.Migrations ] Applying migration '"20240828141856_Notifications"'.
+[28-08-2024 17:19:07254 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Notifications] (
+    [Id] int NOT NULL IDENTITY,
+    [InterestedId] int NULL,
+    [UserId] int NULL,
+    [BookId] int NULL,
+    [Type] nvarchar(max) NOT NULL,
+    [IsSeen] bit NOT NULL,
+    CONSTRAINT [PK_Notifications] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Notifications_Books_BookId] FOREIGN KEY ([BookId]) REFERENCES [Books] ([Id]),
+    CONSTRAINT [FK_Notifications_USERS_UserId] FOREIGN KEY ([UserId]) REFERENCES [USERS] ([Id]) ON DELETE NO ACTION
+);"
+[28-08-2024 17:19:07256 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Notifications_BookId] ON [Notifications] ([BookId]);"
+[28-08-2024 17:19:07257 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Notifications_UserId] ON [Notifications] ([UserId]);"
+[28-08-2024 17:19:07258 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240828141856_Notifications', N'8.0.6');"

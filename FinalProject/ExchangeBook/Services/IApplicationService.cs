@@ -9,7 +9,7 @@ namespace ExchangeBook.Services
         StoreService StoreService { get; }
         BookService BookService { get; }
         StoreBookService StoreBookService { get; }
-        //NotificationService NotificationService { get; }
+        NotificationService NotificationService { get; }
 
 
 

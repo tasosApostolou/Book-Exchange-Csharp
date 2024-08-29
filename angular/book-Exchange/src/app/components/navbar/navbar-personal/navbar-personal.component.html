@@ -29,8 +29,20 @@
       >
       Add New Book
     </a>
+    <button mat-icon-button [matMenuTriggerFor]="notification">
+      <mat-icon role="banner" matBadge={{matBadgeValue()}} matBadgeColor="warn">notifications</mat-icon>
+    </button>
     <button mat-icon-button [matMenuTriggerFor]="edit"> <mat-icon>settings</mat-icon></button>
     <mat-menu #edit="matMenu"><p routerLink="update" role="button" class="hover">Ενημέρωση στοιχείων προφίλ</p> <p routerLink="manage-account" role="button" class="hover" >Διαχειρηση λογαριασμού</p></mat-menu>
+     <!--on notificationClicked make a patch request in order to update notification as 'isSeen' and navigating in routerLink with interestedUser's books table
+      bgNotif() returns 'bg-light' if (!notification.isSeen)-->
+      <mat-menu #notification="matMenu">
+        @for(notif of notifications; track notif){
+           <div  (click)="notificationClicked(notif)"  class="hover {{bgNotif(notif)}} border-bottom" role="banner " mat-menu-item >
+            <p  role="button">Ο χρηστης  <span class="text-primary  ">{{notif.interestedUser.username}}</span> ενδιαφέρεται για το βιβλίο σας με τιτλο: <span class="text-bg-danger">{{notif.book.title}}</span> </p>
+           </div>
+         }
+       </mat-menu>
       <span class="me-3 d-flex gap-2 text-light">
        logout
         <mat-icon

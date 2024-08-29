@@ -22,7 +22,7 @@ namespace ExchangeBook.Services
         public StoreService StoreService => new(_unitOfWork, _logger, _mapper);
         public BookService BookService => new(_unitOfWork, _logger, _mapper);
         public StoreBookService StoreBookService => new(_unitOfWork, _logger, _mapper);
-        //public NotificationService NotificationService => new(_unitOfWork, _logger, _mapper);
+        public NotificationService NotificationService => new(_unitOfWork, _logger, _mapper);
 
 
 

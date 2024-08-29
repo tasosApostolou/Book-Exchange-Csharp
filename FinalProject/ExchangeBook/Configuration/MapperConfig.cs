@@ -58,6 +58,7 @@ namespace ExchangeBook.Configuration
             //CreateMap<Person, PersonReadOnlyDTO>() 
             //    .ForMember(dest => dest.)
             CreateMap<Person, PersonReadOnlyDTO>()
+              .ForMember(dest => dest.userId, opt => opt.MapFrom(src => src.UserId))
               .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
               .ForMember(dest => dest.Firstname, opt => opt.MapFrom(src => src.Firstname))
               .ForMember(dest => dest.Lastname, opt => opt.MapFrom(src => src.Lastname))
@@ -70,6 +71,12 @@ namespace ExchangeBook.Configuration
                .ForMember(dest => dest.Store, opt => opt.MapFrom(src => src.Store))
                .ForMember(dest => dest.Book, opt => opt.MapFrom(src => src.Book))
                .ReverseMap();
+
+            CreateMap<Notification, NotificationReadOnlyDTO>()
+              .ForMember(dest => dest.InterestedUser, opt => opt.MapFrom(src => src.InterestedUser))
+              .ForMember(dest => dest.User, opt => opt.MapFrom(src => src.User))
+              .ForMember(dest => dest.Book, opt => opt.MapFrom(src =>src.Book))
+              .ReverseMap();
 
         } 
     }

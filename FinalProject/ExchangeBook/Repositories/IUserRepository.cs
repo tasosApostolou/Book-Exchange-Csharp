@@ -10,6 +10,8 @@ namespace ExchangeBook.Repositories
         Task<User?> GetByUsernameAsync(string username);
         Task<UserPersonReadOnlyDTO?> GetUserPersonInfoAsync(string username);
         Task<UserStoreReadOnlyDTO?> GetUserStoreInfoAsync(string username);
+        Task<List<Notification>> GetNotificationsByUserIdAsync(int? id);
+        Task<List<Notification>> GetUserNotificationsAsync(int? id);
 
     }
 }

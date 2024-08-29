@@ -1,0 +1,789 @@
+[29-08-2024 13:25:25384 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[29-08-2024 13:25:25713 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7279"
+[29-08-2024 13:25:25721 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5065"
+[29-08-2024 13:25:25732 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[29-08-2024 13:25:25735 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[29-08-2024 13:25:25741 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\User\Desktop\aaa\FinalProject\ExchangeBook"
+[29-08-2024 13:25:26623 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - null null
+[29-08-2024 13:25:27123 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 503.1832ms
+[29-08-2024 13:25:27251 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - null null
+[29-08-2024 13:25:27275 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - 200 13760 "application/javascript; charset=utf-8" 24.0196ms
+[29-08-2024 13:25:27314 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - null null
+[29-08-2024 13:25:27460 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 146.6759ms
+[29-08-2024 13:25:27819 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - null null
+[29-08-2024 13:25:28178 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 359.1352ms
+[29-08-2024 13:34:15043 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/SignupUser""" - null null
+[29-08-2024 13:34:15053 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:15056 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/SignupUser""" - 204 null null 12.8973ms
+[29-08-2024 13:34:15059 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/SignupUser""" - "application/json" 153
+[29-08-2024 13:34:15070 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:15154 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)"'
+[29-08-2024 13:34:15180 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignupUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.UserReadOnlyDTO]] SignupUserAsync(ExchangeBook.DTO.UserDTOs.UserSignUpDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:34:16926 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("60"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:34:16951 +03:00 ExchangeBook.Services.UserService ] "User:  found and returned"
+[29-08-2024 13:34:16967 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:34:17565 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@__phoneNumber_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[PhoneNumber] = @__phoneNumber_0"
+[29-08-2024 13:34:17698 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (Size = 50), @p1='?' (Size = 512), @p2='?' (Size = 50), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [USERS] ([Email], [Password], [UserRole], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+[29-08-2024 13:34:17721 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 15), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Persons] ([Firstname], [Lastname], [PhoneNumber], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p4, @p5, @p6, @p7);"
+[29-08-2024 13:34:17765 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.UserDTOs.UserReadOnlyDTO"'.
+[29-08-2024 13:34:17806 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)" in 2618.971ms
+[29-08-2024 13:34:17808 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)"'
+[29-08-2024 13:34:17817 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/SignupUser""" - 201 148 "application/json; charset=utf-8" 2757.8453ms
+[29-08-2024 13:34:27213 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - null null
+[29-08-2024 13:34:27224 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:27236 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - 204 null null 22.8643ms
+[29-08-2024 13:34:27238 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - "application/json" 41
+[29-08-2024 13:34:27247 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:27250 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:34:27255 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.JwtTokenDTO]] LoginUserAsync(ExchangeBook.DTO.UserDTOs.UserLoginDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:34:27326 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:34:27778 +03:00 ExchangeBook.Services.UserService ] "User: pppp, 1 found and returned"
+[29-08-2024 13:34:27884 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("10"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Username], [u].[Email], [u].[Password], [p].[Id], [u].[UserRole], [p].[PhoneNumber], [p].[Firstname], [p].[Lastname]
+FROM [USERS] AS [u]
+LEFT JOIN [Persons] AS [p] ON [u].[Id] = [p].[UserId]
+WHERE [u].[Username] = @__username_0 AND [u].[UserRole] = N'PERSONAL'"
+[29-08-2024 13:34:27889 +03:00 ExchangeBook.Services.UserService ] "User with username: pppp Success"
+[29-08-2024 13:34:27912 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"ExchangeBook.DTO.UserDTOs.JwtTokenDTO"'.
+[29-08-2024 13:34:27915 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)" in 656.7612ms
+[29-08-2024 13:34:27917 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:34:27919 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - 200 691 "application/json; charset=utf-8" 680.9859ms
+[29-08-2024 13:34:27928 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/1""" - null null
+[29-08-2024 13:34:27933 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:27936 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/1""" - 404 0 null 7.9534ms
+[29-08-2024 13:34:27947 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7279""""/api/personal/1", Response status code: 404
+[29-08-2024 13:34:33682 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - null null
+[29-08-2024 13:34:33686 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:33687 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 204 null null 4.8578ms
+[29-08-2024 13:34:33688 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - "application/json" 41
+[29-08-2024 13:34:33698 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:33699 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:33704 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:34:33744 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:34:33782 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);"
+[29-08-2024 13:34:33791 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2);"
+[29-08-2024 13:34:33816 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:34:33856 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:34:33863 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:34:33868 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 159.9979ms
+[29-08-2024 13:34:33871 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:33873 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 201 55 "application/json; charset=utf-8" 184.3417ms
+[29-08-2024 13:34:38750 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - null null
+[29-08-2024 13:34:38754 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:38755 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 204 null null 4.8405ms
+[29-08-2024 13:34:38757 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - "application/json" 41
+[29-08-2024 13:34:38765 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:38767 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:38768 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:34:38780 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:34:38788 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:34:38795 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:34:38805 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:34:38813 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:34:38816 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 42.7738ms
+[29-08-2024 13:34:38818 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:38820 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 201 55 "application/json; charset=utf-8" 63.3752ms
+[29-08-2024 13:34:43475 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - "application/json" 41
+[29-08-2024 13:34:43481 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:43483 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:43485 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:34:43508 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("10"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:34:43517 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:34:43524 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:34:43536 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:34:43542 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:34:43544 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 53.4446ms
+[29-08-2024 13:34:43546 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:43548 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 201 55 "application/json; charset=utf-8" 72.7846ms
+[29-08-2024 13:34:49140 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - null null
+[29-08-2024 13:34:49145 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:49146 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 204 null null 6.9299ms
+[29-08-2024 13:34:49148 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - "application/json" 41
+[29-08-2024 13:34:49157 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:34:49159 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:49161 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:34:49173 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:34:49181 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);"
+[29-08-2024 13:34:49187 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2);"
+[29-08-2024 13:34:49200 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:34:49213 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:34:49220 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:34:49222 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 57.4589ms
+[29-08-2024 13:34:49225 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:34:49227 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/1/books""" - 201 55 "application/json; charset=utf-8" 78.6249ms
+[29-08-2024 13:35:18215 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/SignupUser""" - null null
+[29-08-2024 13:35:18220 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:18222 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/SignupUser""" - 204 null null 6.1789ms
+[29-08-2024 13:35:18224 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/SignupUser""" - "application/json" 152
+[29-08-2024 13:35:18231 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:18233 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)"'
+[29-08-2024 13:35:18235 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignupUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.UserReadOnlyDTO]] SignupUserAsync(ExchangeBook.DTO.UserDTOs.UserSignUpDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:35:18245 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:35:18251 +03:00 ExchangeBook.Services.UserService ] "User:  found and returned"
+[29-08-2024 13:35:18253 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:35:18432 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("9"ms) [Parameters=["@__phoneNumber_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[PhoneNumber] = @__phoneNumber_0"
+[29-08-2024 13:35:18439 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 50), @p1='?' (Size = 512), @p2='?' (Size = 50), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [USERS] ([Email], [Password], [UserRole], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+[29-08-2024 13:35:18446 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 15), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Persons] ([Firstname], [Lastname], [PhoneNumber], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p4, @p5, @p6, @p7);"
+[29-08-2024 13:35:18455 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.UserDTOs.UserReadOnlyDTO"'.
+[29-08-2024 13:35:18459 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)" in 219.9546ms
+[29-08-2024 13:35:18461 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)"'
+[29-08-2024 13:35:18462 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/SignupUser""" - 201 147 "application/json; charset=utf-8" 237.9139ms
+[29-08-2024 13:35:26753 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - null null
+[29-08-2024 13:35:26759 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:26767 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - 204 null null 14.3298ms
+[29-08-2024 13:35:26769 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - "application/json" 41
+[29-08-2024 13:35:26777 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:26780 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:35:26782 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.JwtTokenDTO]] LoginUserAsync(ExchangeBook.DTO.UserDTOs.UserLoginDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:35:26789 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:35:26958 +03:00 ExchangeBook.Services.UserService ] "User: pppp, 1 found and returned"
+[29-08-2024 13:35:26967 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Username], [u].[Email], [u].[Password], [p].[Id], [u].[UserRole], [p].[PhoneNumber], [p].[Firstname], [p].[Lastname]
+FROM [USERS] AS [u]
+LEFT JOIN [Persons] AS [p] ON [u].[Id] = [p].[UserId]
+WHERE [u].[Username] = @__username_0 AND [u].[UserRole] = N'PERSONAL'"
+[29-08-2024 13:35:26972 +03:00 ExchangeBook.Services.UserService ] "User with username: pppp Success"
+[29-08-2024 13:35:26974 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"ExchangeBook.DTO.UserDTOs.JwtTokenDTO"'.
+[29-08-2024 13:35:26976 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)" in 190.9315ms
+[29-08-2024 13:35:26979 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:35:26981 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - 200 691 "application/json; charset=utf-8" 211.5675ms
+[29-08-2024 13:35:26989 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/1""" - null null
+[29-08-2024 13:35:26992 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:26999 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/1""" - 404 0 null 9.8265ms
+[29-08-2024 13:35:27017 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7279""""/api/personal/1", Response status code: 404
+[29-08-2024 13:35:35064 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - null null
+[29-08-2024 13:35:35069 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:35071 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - 204 null null 6.5695ms
+[29-08-2024 13:35:35073 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - "application/json" 41
+[29-08-2024 13:35:35081 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:35083 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:35:35085 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.JwtTokenDTO]] LoginUserAsync(ExchangeBook.DTO.UserDTOs.UserLoginDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:35:35095 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:35:35264 +03:00 ExchangeBook.Services.UserService ] "User: oooo, 2 found and returned"
+[29-08-2024 13:35:35266 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Username], [u].[Email], [u].[Password], [p].[Id], [u].[UserRole], [p].[PhoneNumber], [p].[Firstname], [p].[Lastname]
+FROM [USERS] AS [u]
+LEFT JOIN [Persons] AS [p] ON [u].[Id] = [p].[UserId]
+WHERE [u].[Username] = @__username_0 AND [u].[UserRole] = N'PERSONAL'"
+[29-08-2024 13:35:35271 +03:00 ExchangeBook.Services.UserService ] "User with username: oooo Success"
+[29-08-2024 13:35:35273 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"ExchangeBook.DTO.UserDTOs.JwtTokenDTO"'.
+[29-08-2024 13:35:35275 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)" in 185.6939ms
+[29-08-2024 13:35:35277 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:35:35279 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - 200 688 "application/json; charset=utf-8" 206.1551ms
+[29-08-2024 13:35:35286 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/2""" - null null
+[29-08-2024 13:35:35290 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:35292 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/2""" - 404 0 null 4.9467ms
+[29-08-2024 13:35:35298 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7279""""/api/personal/2", Response status code: 404
+[29-08-2024 13:35:44262 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - null null
+[29-08-2024 13:35:44266 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:44268 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 204 null null 6.2535ms
+[29-08-2024 13:35:44269 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - "application/json" 41
+[29-08-2024 13:35:44278 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:44280 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:44282 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:35:44291 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:35:44298 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);"
+[29-08-2024 13:35:44303 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2);"
+[29-08-2024 13:35:44309 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:35:44315 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:35:44321 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:35:44323 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 38.1856ms
+[29-08-2024 13:35:44326 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:44329 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 201 55 "application/json; charset=utf-8" 59.6738ms
+[29-08-2024 13:35:50746 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - null null
+[29-08-2024 13:35:50751 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:50753 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 204 null null 6.1891ms
+[29-08-2024 13:35:50754 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - "application/json" 41
+[29-08-2024 13:35:50763 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:50765 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:50767 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:35:50795 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:35:50808 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:35:50815 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:35:50829 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:35:50835 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:35:50838 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 66.7733ms
+[29-08-2024 13:35:50840 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:50842 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 201 55 "application/json; charset=utf-8" 87.9005ms
+[29-08-2024 13:35:55062 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - "application/json" 41
+[29-08-2024 13:35:55066 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:55067 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:55069 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:35:55079 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:35:55091 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:35:55097 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:35:55107 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:35:55114 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:35:55116 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 42.1022ms
+[29-08-2024 13:35:55117 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:55119 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 201 55 "application/json; charset=utf-8" 57.4515ms
+[29-08-2024 13:35:58495 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - null null
+[29-08-2024 13:35:58499 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:58501 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 204 null null 5.8382ms
+[29-08-2024 13:35:58502 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - "application/json" 41
+[29-08-2024 13:35:58513 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:35:58515 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:58517 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:35:58527 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:35:58534 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);"
+[29-08-2024 13:35:58541 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2);"
+[29-08-2024 13:35:58553 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:35:58560 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:35:58565 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:35:58567 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 45.9804ms
+[29-08-2024 13:35:58569 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:35:58570 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/2/books""" - 201 55 "application/json; charset=utf-8" 67.8182ms
+[29-08-2024 13:36:00379 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/2""" - null null
+[29-08-2024 13:36:00384 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:36:00389 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:36:00394 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetPersonBooks\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ExchangeBook.Data.Book]]] GetPersonBooks(System.Nullable`1[System.Int32])" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:36:00444 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("11"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[AuthorId], [t].[Title], [a].[Id], [a].[Name]
+FROM [Persons] AS [p]
+INNER JOIN (
+    SELECT [b].[Id], [b].[AuthorId], [b].[Title], [p0].[PersonsId]
+    FROM [Person_Book] AS [p0]
+    INNER JOIN [Books] AS [b] ON [p0].[BooksId] = [b].[Id]
+) AS [t] ON [p].[Id] = [t].[PersonsId]
+LEFT JOIN [Authors] AS [a] ON [t].[AuthorId] = [a].[Id]
+WHERE [p].[Id] = @__id_0"
+[29-08-2024 13:36:00451 +03:00 ExchangeBook.Services.UserService ] "Student count retrieved with success"
+[29-08-2024 13:36:00458 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO, ExchangeBook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+[29-08-2024 13:36:00465 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)" in 66.0164ms
+[29-08-2024 13:36:00467 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:36:00469 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/2""" - 200 225 "application/json; charset=utf-8" 90.435ms
+[29-08-2024 13:36:51813 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/SignupUser""" - null null
+[29-08-2024 13:36:51817 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:36:51819 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/SignupUser""" - 204 null null 6.004ms
+[29-08-2024 13:36:51825 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/SignupUser""" - "application/json" 152
+[29-08-2024 13:36:51831 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:36:51833 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)"'
+[29-08-2024 13:36:51835 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignupUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.UserReadOnlyDTO]] SignupUserAsync(ExchangeBook.DTO.UserDTOs.UserSignUpDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:36:51847 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:36:51851 +03:00 ExchangeBook.Services.UserService ] "User:  found and returned"
+[29-08-2024 13:36:51856 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:36:52040 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__phoneNumber_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[PhoneNumber] = @__phoneNumber_0"
+[29-08-2024 13:36:52047 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 50), @p1='?' (Size = 512), @p2='?' (Size = 50), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [USERS] ([Email], [Password], [UserRole], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);"
+[29-08-2024 13:36:52053 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 15), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Persons] ([Firstname], [Lastname], [PhoneNumber], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p4, @p5, @p6, @p7);"
+[29-08-2024 13:36:52063 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.UserDTOs.UserReadOnlyDTO"'.
+[29-08-2024 13:36:52066 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)" in 226.1218ms
+[29-08-2024 13:36:52068 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.SignupUserAsync (ExchangeBook)"'
+[29-08-2024 13:36:52069 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/SignupUser""" - 201 147 "application/json; charset=utf-8" 244.0947ms
+[29-08-2024 13:36:58124 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - null null
+[29-08-2024 13:36:58129 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:36:58130 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/User/LoginUser""" - 204 null null 6.5928ms
+[29-08-2024 13:36:58132 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - "application/json" 41
+[29-08-2024 13:36:58140 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:36:58142 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:36:58144 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.UserDTOs.JwtTokenDTO]] LoginUserAsync(ExchangeBook.DTO.UserDTOs.UserLoginDTO)" on controller "ExchangeBook.Controllers.UserController" ("ExchangeBook").
+[29-08-2024 13:36:58155 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Username] = @__username_0"
+[29-08-2024 13:36:58324 +03:00 ExchangeBook.Services.UserService ] "User: kkkk, 3 found and returned"
+[29-08-2024 13:36:58331 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Username], [u].[Email], [u].[Password], [p].[Id], [u].[UserRole], [p].[PhoneNumber], [p].[Firstname], [p].[Lastname]
+FROM [USERS] AS [u]
+LEFT JOIN [Persons] AS [p] ON [u].[Id] = [p].[UserId]
+WHERE [u].[Username] = @__username_0 AND [u].[UserRole] = N'PERSONAL'"
+[29-08-2024 13:36:58334 +03:00 ExchangeBook.Services.UserService ] "User with username: kkkk Success"
+[29-08-2024 13:36:58336 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"ExchangeBook.DTO.UserDTOs.JwtTokenDTO"'.
+[29-08-2024 13:36:58338 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)" in 190.345ms
+[29-08-2024 13:36:58341 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.UserController.LoginUserAsync (ExchangeBook)"'
+[29-08-2024 13:36:58343 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/User/LoginUser""" - 200 688 "application/json; charset=utf-8" 210.8627ms
+[29-08-2024 13:36:58350 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/3""" - null null
+[29-08-2024 13:36:58353 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:36:58355 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/personal/3""" - 404 0 null 4.6997ms
+[29-08-2024 13:36:58362 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7279""""/api/personal/3", Response status code: 404
+[29-08-2024 13:37:03368 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - null null
+[29-08-2024 13:37:03374 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:03375 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 204 null null 6.8636ms
+[29-08-2024 13:37:03377 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - "application/json" 41
+[29-08-2024 13:37:03387 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:03389 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:03391 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:03401 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:37:03411 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);"
+[29-08-2024 13:37:03418 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2);"
+[29-08-2024 13:37:03430 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:37:03437 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:03444 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:37:03446 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 51.4245ms
+[29-08-2024 13:37:03448 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:03450 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 201 55 "application/json; charset=utf-8" 73.1677ms
+[29-08-2024 13:37:09940 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - null null
+[29-08-2024 13:37:09945 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:09947 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 204 null null 6.2188ms
+[29-08-2024 13:37:09948 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - "application/json" 41
+[29-08-2024 13:37:09958 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:09959 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:09961 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:09970 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:37:09984 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:09992 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:37:10002 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:10009 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:37:10012 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 47.5559ms
+[29-08-2024 13:37:10015 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:10017 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 201 56 "application/json; charset=utf-8" 69.2972ms
+[29-08-2024 13:37:12181 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/3""" - null null
+[29-08-2024 13:37:12187 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:12191 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:37:12193 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetPersonBooks\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ExchangeBook.Data.Book]]] GetPersonBooks(System.Nullable`1[System.Int32])" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:12215 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[AuthorId], [t].[Title], [a].[Id], [a].[Name]
+FROM [Persons] AS [p]
+INNER JOIN (
+    SELECT [b].[Id], [b].[AuthorId], [b].[Title], [p0].[PersonsId]
+    FROM [Person_Book] AS [p0]
+    INNER JOIN [Books] AS [b] ON [p0].[BooksId] = [b].[Id]
+) AS [t] ON [p].[Id] = [t].[PersonsId]
+LEFT JOIN [Authors] AS [a] ON [t].[AuthorId] = [a].[Id]
+WHERE [p].[Id] = @__id_0"
+[29-08-2024 13:37:12222 +03:00 ExchangeBook.Services.UserService ] "Student count retrieved with success"
+[29-08-2024 13:37:12226 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO, ExchangeBook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+[29-08-2024 13:37:12229 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)" in 27.8807ms
+[29-08-2024 13:37:12231 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:37:12233 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/3""" - 200 114 "application/json; charset=utf-8" 52.7873ms
+[29-08-2024 13:37:15758 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/Book/GetBooksByTitle//books""" - null null
+[29-08-2024 13:37:15772 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:15775 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/Book/GetBooksByTitle//books""" - 404 0 null 16.4821ms
+[29-08-2024 13:37:15783 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7279""""/api/Book/GetBooksByTitle//books", Response status code: 404
+[29-08-2024 13:37:24644 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - null null
+[29-08-2024 13:37:24649 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:24651 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 204 null null 6.2766ms
+[29-08-2024 13:37:24652 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - "application/json" 41
+[29-08-2024 13:37:24661 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:24663 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:24664 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:24674 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:37:24685 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:24691 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:37:24701 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:24706 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:37:24707 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 38.095ms
+[29-08-2024 13:37:24709 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:24711 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 201 56 "application/json; charset=utf-8" 58.3549ms
+[29-08-2024 13:37:31757 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - null null
+[29-08-2024 13:37:31761 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:31762 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 204 null null 5.5756ms
+[29-08-2024 13:37:31764 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - "application/json" 41
+[29-08-2024 13:37:31774 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:31775 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:31777 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:31788 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:37:31799 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:31806 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:37:31816 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:31822 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:37:31825 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 42.7887ms
+[29-08-2024 13:37:31827 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:31830 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 201 56 "application/json; charset=utf-8" 65.3566ms
+[29-08-2024 13:37:39933 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - null null
+[29-08-2024 13:37:39938 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:39940 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 204 null null 6.2698ms
+[29-08-2024 13:37:39941 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - "application/json" 41
+[29-08-2024 13:37:39951 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:39952 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:39954 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"AddBookToPerson\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] AddBookToPerson(Int32, ExchangeBook.DTO.BookDTOs.BookInsertDTO)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:39965 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0"
+[29-08-2024 13:37:39971 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (Size = 60)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);"
+[29-08-2024 13:37:39976 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2);"
+[29-08-2024 13:37:39987 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:37:39993 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Person_Book] ([BooksId], [PersonsId])
+VALUES (@p0, @p1);"
+[29-08-2024 13:37:39998 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:37:40001 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)" in 41.6855ms
+[29-08-2024 13:37:40003 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.AddBookToPerson (ExchangeBook)"'
+[29-08-2024 13:37:40004 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Person/AddBookToPerson/3/books""" - 201 56 "application/json; charset=utf-8" 63.3116ms
+[29-08-2024 13:37:41068 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/3""" - null null
+[29-08-2024 13:37:41073 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:41080 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:37:41082 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetPersonBooks\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ExchangeBook.Data.Book]]] GetPersonBooks(System.Nullable`1[System.Int32])" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:41102 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[AuthorId], [t].[Title], [a].[Id], [a].[Name]
+FROM [Persons] AS [p]
+INNER JOIN (
+    SELECT [b].[Id], [b].[AuthorId], [b].[Title], [p0].[PersonsId]
+    FROM [Person_Book] AS [p0]
+    INNER JOIN [Books] AS [b] ON [p0].[BooksId] = [b].[Id]
+) AS [t] ON [p].[Id] = [t].[PersonsId]
+LEFT JOIN [Authors] AS [a] ON [t].[AuthorId] = [a].[Id]
+WHERE [p].[Id] = @__id_0"
+[29-08-2024 13:37:41111 +03:00 ExchangeBook.Services.UserService ] "Student count retrieved with success"
+[29-08-2024 13:37:41116 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO, ExchangeBook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+[29-08-2024 13:37:41119 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)" in 25.4036ms
+[29-08-2024 13:37:41122 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:37:41124 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/3""" - 200 285 "application/json; charset=utf-8" 56.7092ms
+[29-08-2024 13:37:42499 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/DeletesPersonBook/personal/3/book/10""" - null null
+[29-08-2024 13:37:42510 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:42513 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7279""""/api/Person/DeletesPersonBook/personal/3/book/10""" - 204 null null 13.7348ms
+[29-08-2024 13:37:42515 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "DELETE" "https"://"localhost:7279""""/api/Person/DeletesPersonBook/personal/3/book/10""" - null null
+[29-08-2024 13:37:42524 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:42526 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.DeletesPersonBook (ExchangeBook)"'
+[29-08-2024 13:37:42531 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"DeletesPersonBook\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] DeletesPersonBook(Int32, Int32)" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:42542 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Firstname], [p].[Lastname], [p].[PhoneNumber], [p].[UserId]
+FROM [Persons] AS [p]
+WHERE [p].[Id] = @__p_0"
+[29-08-2024 13:37:42553 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0"
+[29-08-2024 13:37:42581 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("13"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM Person_Book WHERE PersonsId = @p0 AND BooksId = @p1"
+[29-08-2024 13:37:42594 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__personId_0='?' (DbType = Int32), @__bookId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[AuthorId], [t].[Title]
+FROM [Persons] AS [p]
+INNER JOIN (
+    SELECT [b].[Id], [b].[AuthorId], [b].[Title], [p0].[PersonsId]
+    FROM [Person_Book] AS [p0]
+    INNER JOIN [Books] AS [b] ON [p0].[BooksId] = [b].[Id]
+) AS [t] ON [p].[Id] = [t].[PersonsId]
+WHERE [p].[Id] = @__personId_0 AND [t].[Id] = @__bookId_1"
+[29-08-2024 13:37:42600 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO"'.
+[29-08-2024 13:37:42603 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.DeletesPersonBook (ExchangeBook)" in 66.4002ms
+[29-08-2024 13:37:42605 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.DeletesPersonBook (ExchangeBook)"'
+[29-08-2024 13:37:42607 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "DELETE" "https"://"localhost:7279""""/api/Person/DeletesPersonBook/personal/3/book/10""" - 200 24 "application/json; charset=utf-8" 92.0746ms
+[29-08-2024 13:37:42609 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/3""" - null null
+[29-08-2024 13:37:42616 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:37:42618 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:37:42620 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetPersonBooks\", controller = \"Person\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ExchangeBook.Data.Book]]] GetPersonBooks(System.Nullable`1[System.Int32])" on controller "ExchangeBook.Controllers.PersonController" ("ExchangeBook").
+[29-08-2024 13:37:42627 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[AuthorId], [t].[Title], [a].[Id], [a].[Name]
+FROM [Persons] AS [p]
+INNER JOIN (
+    SELECT [b].[Id], [b].[AuthorId], [b].[Title], [p0].[PersonsId]
+    FROM [Person_Book] AS [p0]
+    INNER JOIN [Books] AS [b] ON [p0].[BooksId] = [b].[Id]
+) AS [t] ON [p].[Id] = [t].[PersonsId]
+LEFT JOIN [Authors] AS [a] ON [t].[AuthorId] = [a].[Id]
+WHERE [p].[Id] = @__id_0"
+[29-08-2024 13:37:42633 +03:00 ExchangeBook.Services.UserService ] "Student count retrieved with success"
+[29-08-2024 13:37:42637 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO, ExchangeBook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+[29-08-2024 13:37:42639 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)" in 15.2482ms
+[29-08-2024 13:37:42641 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.PersonController.GetPersonBooks (ExchangeBook)"'
+[29-08-2024 13:37:42642 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/Person/GetPersonBooks/3""" - 200 228 "application/json; charset=utf-8" 33.219ms
+[29-08-2024 13:41:17930 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "POST" "https"://"localhost:7279""""/api/Notification/CreateNotification/1""" - "application/json-patch+json" 54
+[29-08-2024 13:41:17935 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[29-08-2024 13:41:17937 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"ExchangeBook.Controllers.NotificationController.CreateNotification (ExchangeBook)"'
+[29-08-2024 13:41:17942 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"CreateNotification\", controller = \"Notification\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExchangeBook.DTO.BookDTOs.BookReadOnlyDTO]] CreateNotification(Int32, ExchangeBook.DTO.NotificationDTO.NotificationCreateDTO)" on controller "ExchangeBook.Controllers.NotificationController" ("ExchangeBook").
+[29-08-2024 13:41:17963 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[UserRole], [u].[Username]
+FROM [USERS] AS [u]
+WHERE [u].[Id] = @__p_0"
+[29-08-2024 13:41:17971 +03:00 ExchangeBook.Services.UserService ] "The method or operation is not implemented.""   at ExchangeBook.Data.User.op_Implicit(Task`1 v) in C:\Users\User\Desktop\aaa\FinalProject\ExchangeBook\Data\User.cs:line 25
+   at ExchangeBook.Services.NotificationService.CreateNotification(Int32 interestedId, NotificationCreateDTO notifDTO) in C:\Users\User\Desktop\aaa\FinalProject\ExchangeBook\Services\NotificationService.cs:line 28"
+[29-08-2024 13:41:17974 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.NotificationController.CreateNotification (ExchangeBook)" in 27.4459ms
+[29-08-2024 13:41:17977 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.NotificationController.CreateNotification (ExchangeBook)"'
+[29-08-2024 13:41:17981 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Notification/CreateNotification/1""" - 500 null "application/json" 50.3532ms
+[29-08-2024 15:42:19580 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[29-08-2024 15:42:19664 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[29-08-2024 15:42:19667 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[29-08-2024 15:42:19668 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[29-08-2024 15:42:19689 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+[29-08-2024 15:42:19718 +03:00 Microsoft.EntityFrameworkCore.Migrations ] Applying migration '"20240829124202_Notifications_edit"'.
+[29-08-2024 15:42:19803 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Notifications_InterestedId] ON [Notifications] ([InterestedId]);"
+[29-08-2024 15:42:19812 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Notifications] ADD CONSTRAINT [FK_Notifications_USERS_InterestedId] FOREIGN KEY ([InterestedId]) REFERENCES [USERS] ([Id]) ON DELETE NO ACTION;"
+[29-08-2024 15:42:19816 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240829124202_Notifications_edit', N'8.0.6');"

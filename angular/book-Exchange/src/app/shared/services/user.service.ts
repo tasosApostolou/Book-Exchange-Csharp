@@ -51,7 +51,7 @@ this.router.navigate(['login']);
 
   }
   getUserNotifications(){//getNotificationsByUserID
-  return this.http.get<Notification[]>(`${API_USER}/notification/${this.id}`)
+  return this.http.get<Notification[]>(`${API_USER}/GetNotifications/${this.id}`)
 }
 
   updateUser(user:User){

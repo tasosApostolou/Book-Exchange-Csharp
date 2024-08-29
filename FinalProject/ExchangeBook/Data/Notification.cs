@@ -7,6 +7,8 @@ namespace ExchangeBook.Data
         public int Id { get; set; }
 
         public int? InterestedId { get; set; }
+        public virtual User? InterestedUser { get; set; }
+
 
         public int? UserId { get; set; }
         public virtual User? User { get; set; }

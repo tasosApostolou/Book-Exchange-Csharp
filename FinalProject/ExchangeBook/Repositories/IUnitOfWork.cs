@@ -8,7 +8,7 @@
         public StoreBookRepository StoreBookRepository { get; }
         public UserRepositorty UserRepositorty { get; }
         public AuthorRepository AuthorRepository { get; }
-        //public NotificationRepository NotificationRepository { get; }
+        public NotificationRepository NotificationRepository { get; }
 
         Task<bool> SaveAsync();
     }

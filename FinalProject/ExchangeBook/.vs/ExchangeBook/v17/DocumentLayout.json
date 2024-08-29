@@ -3,8 +3,128 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\configuration\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:configuration\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\persondto\\personreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\persondto\\personreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\bookdtos\\bookreaddtoincludepersons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\bookdtos\\bookreaddtoincludepersons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\models\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:models\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\notificationdto\\notificationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\notificationdto\\notificationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\notificationdto\\notificationpatchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\notificationdto\\notificationpatchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\notificationdto\\notificationreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\notificationdto\\notificationreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\notificationdto\\notificationreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\notificationdto\\notificationreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\userrepositorty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\userrepositorty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\exceptions\\notificationsnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\exceptions\\notificationsnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\exceptions\\personnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:services\\exceptions\\personnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\data\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:data\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\data\\bookexchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:data\\bookexchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\migrations\\bookexchangedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:migrations\\bookexchangedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\dto\\userdtos\\userreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:dto\\userdtos\\userreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +134,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -26,19 +150,409 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MapperConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Configuration\\MapperConfig.cs",
+              "RelativeDocumentMoniker": "Configuration\\MapperConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Configuration\\MapperConfig.cs",
+              "RelativeToolTip": "Configuration\\MapperConfig.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAACsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:22:17.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookReadDTOIncludePersons.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "RelativeDocumentMoniker": "DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "RelativeToolTip": "DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:20:45.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\BookController.cs",
               "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:10:13.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonReadOnlyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\PersonDTO\\PersonReadOnlyDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\PersonDTO\\PersonReadOnlyDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\PersonDTO\\PersonReadOnlyDTO.cs",
+              "RelativeToolTip": "DTO\\PersonDTO\\PersonReadOnlyDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:07:21.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotificationType.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\NotificationType.cs",
+              "RelativeDocumentMoniker": "models\\NotificationType.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\NotificationType.cs",
+              "RelativeToolTip": "models\\NotificationType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T14:38:23.573Z",
+              "WhenOpened": "2024-08-29T18:37:56.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BookRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BookRepository.cs",
+              "RelativeToolTip": "Repositories\\BookRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:36:44.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\NotificationService.cs",
+              "RelativeToolTip": "Services\\NotificationService.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T10:44:29.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NotificationReadOnlyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationReadOnlyDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\NotificationDTO\\NotificationReadOnlyDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationReadOnlyDTO.cs",
+              "RelativeToolTip": "DTO\\NotificationDTO\\NotificationReadOnlyDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T11:21:53.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NotificationPatchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationPatchDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\NotificationDTO\\NotificationPatchDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationPatchDTO.cs",
+              "RelativeToolTip": "DTO\\NotificationDTO\\NotificationPatchDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T16:36:44.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Controllers\\NotificationController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T10:24:26.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificationCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationCreateDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\NotificationDTO\\NotificationCreateDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationCreateDTO.cs",
+              "RelativeToolTip": "DTO\\NotificationDTO\\NotificationCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T16:36:47.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "Controllers\\PersonController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAF0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T14:20:20.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\PersonService.cs",
+              "RelativeToolTip": "Services\\PersonService.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:07:41.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "Repositories\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T16:48:40.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IUserService.cs",
+              "RelativeToolTip": "Services\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T16:47:49.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\INotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\INotificationService.cs",
+              "RelativeToolTip": "Services\\INotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:06:58.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\NotificationRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\NotificationRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAB0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:51:26.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AQIAAPMAAAAAAAAAAAAAACgBAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T11:02:51.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRepositorty.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\UserRepositorty.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepositorty.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\UserRepositorty.cs",
+              "RelativeToolTip": "Repositories\\UserRepositorty.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAGIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:08:59.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\PersonRepository.cs",
+              "RelativeToolTip": "Repositories\\PersonRepository.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAFoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:08:03.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NotificationReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationReturnDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\NotificationDTO\\NotificationReturnDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\NotificationDTO\\NotificationReturnDTO.cs",
+              "RelativeToolTip": "DTO\\NotificationDTO\\NotificationReturnDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:02:59.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAKMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:34:01.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NotificationsNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\Exceptions\\NotificationsNotFoundException.cs",
+              "RelativeDocumentMoniker": "Services\\Exceptions\\NotificationsNotFoundException.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\Exceptions\\NotificationsNotFoundException.cs",
+              "RelativeToolTip": "Services\\Exceptions\\NotificationsNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T14:35:32.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PersonNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\Exceptions\\PersonNotFoundException.cs",
+              "RelativeDocumentMoniker": "Services\\Exceptions\\PersonNotFoundException.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\Exceptions\\PersonNotFoundException.cs",
+              "RelativeToolTip": "Services\\Exceptions\\PersonNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T14:35:36.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\Notification.cs",
+              "RelativeDocumentMoniker": "Data\\Notification.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\Notification.cs",
+              "RelativeToolTip": "Data\\Notification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:58:15.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:38:51.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:36:20.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BookExchangeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\BookExchangeDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\BookExchangeDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\BookExchangeDbContext.cs",
+              "RelativeToolTip": "Data\\BookExchangeDbContext.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:26:30.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\User.cs",
+              "RelativeDocumentMoniker": "Data\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\User.cs",
+              "RelativeToolTip": "Data\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:34:08.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BookExchangeDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Migrations\\BookExchangeDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\BookExchangeDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Migrations\\BookExchangeDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\BookExchangeDbContextModelSnapshot.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:37:09.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserReadOnlyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserReadOnlyDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UserDTOs\\UserReadOnlyDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserReadOnlyDTO.cs",
+              "RelativeToolTip": "DTO\\UserDTOs\\UserReadOnlyDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:21:13.825Z",
               "EditorCaption": ""
             }
           ]

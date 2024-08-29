@@ -7,8 +7,8 @@ namespace ExchangeBook.DTO.NotificationDTO
 {
     public class NotificationCreateDTO
     {
-        //public NotificationType? Type { get; set; }
-        //public int UserId { get; set; }
+        public NotificationType? Type { get; set; }
+        public int UserId { get; set; }
         public int BookId { get; set; }
     }
 }

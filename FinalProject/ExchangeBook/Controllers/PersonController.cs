@@ -39,7 +39,6 @@ namespace ExchangeBook.Controllers
                 throw new InvalidRegistrationException("ErrorsInRegistation: " + errors);
             }
             var book = await _applicationService.BookService.CreateBookAsync(bookDto);
-
             // Add the created book to the person's books (assigning personId and Bookid in Person_Book many-many table
             await _applicationService.PersonService.AddBookToPersonAsync(personId, book.Id);
             //return Ok(_mapper.Map<BookReadOnlyDTO>(book));
@@ -92,8 +91,6 @@ namespace ExchangeBook.Controllers
         //[Authorize(Roles = "Personal")]
         public async Task<ActionResult<PersonReadOnlyDTO>> UpdateUserAccount(int personId, PersonDTO? personDTO)
         {
-           
-
             var person = await _applicationService.PersonService.UpdatePersonAsync(personId, personDTO!);
             var returnedPersonDTO = _mapper.Map<PersonReadOnlyDTO>(person);
             return Ok(returnedPersonDTO);

@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, ElementRef, inject, Input, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenu } from '@angular/material/menu';
 import { MatToolbar, MatToolbarModule, MatToolbarRow } from '@angular/material/toolbar';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { NotificationService } from 'src/app/shared/services/notification.service';
+import { Person } from 'src/app/shared/interfaces/person';
 
 
 @Component({
@@ -22,7 +24,43 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
   styleUrl: './books-with-persons.component.css'
 })
 export class BooksWithPersonsComponent {
+// @Input() data:BookWithPersons[]
+// userservce = inject(UserService)
+
+// }
+
+@ViewChild('iconRef', { static: true }) iconRef: ElementRef;
 @Input() data:BookWithPersons[]
+
+notificationService = inject(NotificationService)
 userservce = inject(UserService)
+
+interest(bkps:BookWithPersons,person:Person,event:Event){
+  this.iconType(event)
+  const notification = {
+    type:"INTEREST",
+    userId: person.userId,
+    bookId:bkps.id
+  }
+  console.log(`userid: ${person.userId}book:${bkps.id}`)
+  this.notificationService.createNotification(notification as any as JSON ).subscribe({
+    next:(response) => {
+      console.log(`${response} data`)
+    },
+    error:(response) => {
+      console.log('Error in notification creation', response)
+    }
+  })
+  }
+
+  iconType(event:Event){
+    let matIcon: HTMLElement = event.target as HTMLElement;
+    if(matIcon.textContent ==="thumb_down"){
+      matIcon.innerText = "thumb_up"
+    }
+    else{
+      matIcon.innerText = "thumb_down"
+    }
+  }
 
 }

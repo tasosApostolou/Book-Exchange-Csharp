@@ -14,11 +14,12 @@ namespace ExchangeBook.Data
         public virtual Store? Store { get; set; }
 
         public ICollection<Notification> Notifications { get; set; } = new HashSet<Notification>();
+        public ICollection<Notification> NotificationsAsInterested { get; set; } = new HashSet<Notification>();
+
 
         public override string? ToString()
         {
             return $"{Username}, {Id}";
         }
-
     }
 }

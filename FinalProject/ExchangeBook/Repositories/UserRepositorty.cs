@@ -77,5 +77,30 @@ namespace ExchangeBook.Repositories
             return user;
         }
 
+        public async Task<List<Notification>> GetUserNotificationsAsync(int? id)
+        {
+            List<Notification> userNotifications;
+            userNotifications = await _context.Notifications
+                .Where(n => n.UserId == id)
+                .Include(n => n.User)
+                .Include(n => n.InterestedUser)
+                .Include(n => n.Book)
+                .ToListAsync();
+            return userNotifications;
+        }
+
+        public async Task<List<Notification>> GetNotificationsByUserIdAsync(int? id)
+        {
+            List<Notification> userNotifications;
+            userNotifications = await _context.Users
+                .Where(u => u.Id == id)
+                .SelectMany(u => u.Notifications)
+                .Include(n => n.User)
+                .Include(n => n.InterestedUser)
+                .Include(n => n.Book)
+                .ToListAsync();
+            return userNotifications;
+        }
+
     }
 }

@@ -20,7 +20,7 @@ namespace ExchangeBook.Repositories
         public StoreBookRepository StoreBookRepository => new(_context);
         public AuthorRepository AuthorRepository => new(_context);
         public UserRepositorty UserRepositorty => new(_context, _mapper);
-        //public NotificationRepository NotificationRepository => new(_context);
+        public NotificationRepository NotificationRepository => new(_context);
 
         public async Task<bool> SaveAsync()
         {

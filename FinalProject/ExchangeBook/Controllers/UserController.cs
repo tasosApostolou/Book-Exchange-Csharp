@@ -150,6 +150,18 @@ namespace ExchangeBook.Controllers
             return Ok(returnedUserDTO);
         }
 
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<Notification>>> GetNotifications(int id)
+        {
+            List<Notification> notifications = await _applicationService.UserService.GetUserNotificationsAsync(id);
+            if (notifications is null)
+            {
+                throw new NotificationsNotFoundException("not found notifications");
+            }
+            return Ok(_mapper.Map<List<NotificationReadOnlyDTO>>(notifications));
+        }
+
         [HttpDelete("{id}")]
         public async Task<UserReadOnlyDTO> DeleteUser(int id)
         {

@@ -92,6 +92,8 @@ namespace ExchangeBook.Migrations
 
                     b.HasIndex("BookId");
 
+                    b.HasIndex("InterestedId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Notifications");
@@ -243,12 +245,19 @@ namespace ExchangeBook.Migrations
                         .WithMany("Notifications")
                         .HasForeignKey("BookId");
 
+                    b.HasOne("ExchangeBook.Data.User", "InterestedUser")
+                        .WithMany("NotificationsAsInterested")
+                        .HasForeignKey("InterestedId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("ExchangeBook.Data.User", "User")
                         .WithMany("Notifications")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Book");
+
+                    b.Navigation("InterestedUser");
 
                     b.Navigation("User");
                 });
@@ -327,6 +336,8 @@ namespace ExchangeBook.Migrations
             modelBuilder.Entity("ExchangeBook.Data.User", b =>
                 {
                     b.Navigation("Notifications");
+
+                    b.Navigation("NotificationsAsInterested");
 
                     b.Navigation("Person");
 

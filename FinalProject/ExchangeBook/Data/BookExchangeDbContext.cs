@@ -44,11 +44,15 @@ namespace ExchangeBook.Data
             });
             modelBuilder.Entity<Notification>(entity =>
             {
-                // Explicitly map HolderUser to UserId
+
                 entity.HasOne(n => n.User)
                       .WithMany(u => u.Notifications)
                       .HasForeignKey(n => n.UserId)
                       .OnDelete(DeleteBehavior.Restrict); // Adjust delete behavior as needed
+                entity.HasOne(n => n.InterestedUser)
+                      .WithMany(u => u.NotificationsAsInterested)
+                      .HasForeignKey(n => n.InterestedId)
+                      .OnDelete(DeleteBehavior.Restrict);
 
                 // Map the Book relationship
                 entity.HasOne(n => n.Book)

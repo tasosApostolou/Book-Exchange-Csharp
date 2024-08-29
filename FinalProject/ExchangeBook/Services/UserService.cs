@@ -294,6 +294,22 @@ namespace ExchangeBook.Services
             }
 
         }
+        public async Task<List<Notification>> GetUserNotificationsAsync(int? id)
+        {
+            List<Notification> notifications = new();
+
+            try
+            {
+                notifications = await _unitOfWork!.UserRepositorty.GetUserNotificationsAsync(id);
+                _logger!.LogInformation("{Message}", "Notification count retrieved with success ");
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+            }
+            return notifications;
+        }
+
         private Store ExtractStore(UserStoreSignupDTO? signupDTO)
         {
             return new Store()

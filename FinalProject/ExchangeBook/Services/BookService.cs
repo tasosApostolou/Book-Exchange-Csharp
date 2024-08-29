@@ -76,7 +76,6 @@ namespace ExchangeBook.Services
             {
                 book = await _unitOfWork!.BookRepository.GetAsync(id);
                 _logger!.LogInformation("{Message}", "Book with id: " + id + " Success");
-                Console.WriteLine(book.Author.Name + " author adasd dsdasd ");
             }
             catch (Exception e)
             {

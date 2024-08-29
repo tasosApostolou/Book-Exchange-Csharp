@@ -14,6 +14,7 @@ namespace ExchangeBook.Services
         Task<User?> GetUserByUsernameAsync(string username);
         Task<UserPersonReadOnlyDTO?> GetUserPersonByUsername(string? username);
         Task<UserReadOnlyDTO?> DeleteUserAsync(int id);
+        Task<List<Notification>> GetUserNotificationsAsync(int? id);
         Task<string> CreateUserToken(int userId, string? userName, string? email, UserRole? userRole,
             string appSecurityKey);
 

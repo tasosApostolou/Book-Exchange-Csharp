@@ -15,7 +15,7 @@ id = this.userService.id
 title:string=''
 // addBook(book:InsertBook | InsertStoreBook)
 addBook(book:InsertBook){
-  return this.http.post<{data:JSON}>(`https://localhost:7279/api/Person/AddBookToPerson/${this.userService.user().roleEntityId}/books`,book)
+  return this.http.post<{data:JSON}>(`${API_URL}/AddBookToPerson/${this.userService.user().roleEntityId}`,book)
 }
 addStoreBook(storeBook:InsertStoreBook){
   return this.http.post<{data:JSON}>(`https://localhost:7279/api/Store/AddBookToStore/${this.userService.user().roleEntityId}`,storeBook)

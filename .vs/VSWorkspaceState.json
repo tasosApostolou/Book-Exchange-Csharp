@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FinalProject",
+    "\\FinalProject\\ExchangeBook",
+    "\\FinalProject\\ExchangeBook\\Configuration"
   ],
-  "SelectedNode": "\\FinalProject.sln",
+  "SelectedNode": "\\FinalProject\\ExchangeBook\\Configuration\\MapperConfig.cs",
   "PreviewInSolutionExplorer": false
 }

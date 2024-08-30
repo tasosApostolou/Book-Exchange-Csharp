@@ -53,5 +53,17 @@ namespace ExchangeBook.Controllers
 
             return "Deleted";
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<Book>>> GetPersonBooks(int? id)
+        {
+            List<Book> books = await _applicationService.PersonService.GetPersonBooksAsync(id);
+            //List<BookReadOnlyDTO> booksReadOnly;
+            if (books is null)
+            {
+                throw new BookNotFoundException("not found books");
+            }
+            return Ok(_mapper.Map<List<BookReadOnlyDTO>>(books));
+        }
     }
 }

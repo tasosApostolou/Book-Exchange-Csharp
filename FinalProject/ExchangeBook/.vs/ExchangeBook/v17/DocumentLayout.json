@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\configuration\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\configuration\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D146035E-5C87-4A65-B116-5DF4CB40CD8C}|ExchangeBook.csproj|solutionrelative:configuration\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,8 +158,7 @@
               "RelativeToolTip": "Configuration\\MapperConfig.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T19:22:17.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T19:22:17.92Z"
             },
             {
               "$type": "Document",
@@ -175,33 +174,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\BookController.cs",
               "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB8AAAAdAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEcAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T19:10:13.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PersonController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
               "RelativeToolTip": "Controllers\\PersonController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADsAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T14:20:20.857Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
